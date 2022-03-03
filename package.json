@@ -1,0 +1,26 @@
+{
+  "name": "react-appkit",
+  "version": "0.0.1",
+  "description": "Use React to create AppKit apps",
+  "main": "src/index.jsx",
+  "scripts": {
+    "install": "true",
+    "postinstall": "patch-package",
+    "build": "node-gyp rebuild",
+    "incbuild": "node-gyp build",
+    "clean": "node-gyp clean"
+  },
+  "author": "Sungbin Jo <goranmoomin@daum.net>",
+  "license": "MIT",
+  "productName": "React AppKit",
+  "productId": "com.goranmoomin.react-appkit",
+  "dependencies": {
+    "esbuild": "^0.14.23",
+    "mustache": "^4.2.0",
+    "node-gyp": "^8.4.1",
+    "node-jq": "^2.1.0",
+    "patch-package": "^6.4.7",
+    "react": "^17.0.2",
+    "react-reconciler": "^0.26.2"
+  }
+}

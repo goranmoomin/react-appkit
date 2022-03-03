@@ -1,0 +1,14 @@
+diff --git a/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py b/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py
+index a75d8ee..c0a441e 100644
+--- a/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py
++++ b/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py
+@@ -587,6 +587,9 @@ class XcodeSettings:
+         if self._Test("CLANG_WARN_CONSTANT_CONVERSION", "YES", default="NO"):
+             cflags.append("-Wconstant-conversion")
+ 
++        if self._Test("CLANG_ENABLE_MODULES", "YES", default="NO"):
++            cflags.append("-fmodules")
++
+         if self._Test("GCC_CHAR_IS_UNSIGNED_CHAR", "YES", default="NO"):
+             cflags.append("-funsigned-char")
+ 
